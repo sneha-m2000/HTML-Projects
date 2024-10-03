@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debug Media Query</title>
+    <style>
+      .section-1 {
+        width:500px;
+        height:500px;
+        background-color: peachpuff;
+        text-align: left;
+      }
+
+      @media (max-width: 400px) {
+        .section-1{
+          background-color: palevioletred;
+          font-size: 8px;
+          padding:20px;
+          text-align: center;
+        }
+         span {
+          display:none;
+        }
+      }
+       
+  
+    </style>
+  </head>
+  <body>
+    <div class="section-1">
+      <h1>Welcome to Debug <span>Media</span></h1>
+    </div>
+  </body>
+</html>

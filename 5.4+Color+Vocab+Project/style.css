@@ -1,0 +1,31 @@
+
+
+
+*color-title
+{
+    font-weight: normal;   
+}
+#red{
+    color:red;
+}
+#blue{
+    color: blue;
+}
+#orange{
+    color: orange;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color:yellow
+}
+
+img{
+    width:200px; /* Set image width */
+    height:200px;/* Set image height */
+    display:block;/* Ensure images stack vertically */
+    margin-bottom:10px; /* Add some space below each image */
+}
+
+

@@ -1,0 +1,281 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #111;
+}
+
+.header{
+    text-align: center;
+}
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+/* Introduction Section */
+#introduction {
+    text-align: center;
+    padding: 60px; /* Same padding as Hero Section */
+    background-image: url('backgroundImage.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 40px; /* Consistent bottom margin */
+    border-radius: 10px; /* Rounded corners */
+    animation: slideUp 2s ease; /* Same animation */
+}
+
+#introduction h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #111; /* Change text color to white for better contrast */
+}
+
+#introduction p {
+    font-size: 1.8rem;
+    color: #333; /* Slightly lighter text color for better visibility */
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+#introduction img {
+    width: 250px; /* Same width as in Hero Section */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for the image */
+}
+
+#hero {
+    text-align: left; /* Align text to the left */
+    padding: 60px;
+    background-image: url('backgroundImageOfHero.jpg'); /* Add your background image here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    animation: slideUp 2s ease;
+}
+#hero img {
+    width: 250px; /* Set width for a circular image */
+    height: 250px; /* Set height for a circular image */
+    border-radius: 50%; /* Perfect circle */
+    object-fit: cover; /* Maintain aspect ratio */
+    object-position: center; /* Center the image */
+    /* Position the image absolutely */
+    right: 20px; /* Position from the right edge */
+    top: 40px; /* Position from the top edge */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+    margin-right: 50px;
+}
+span{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#hero p {
+    font-size: .8rem;
+    color: black;
+    max-width: 400px;
+    margin-right: 50px;
+    line-height: 1.8;
+    font-weight: bolder;
+    margin-bottom:50px;
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Resume Section (Skills) */
+#resume {
+    text-align: center;
+    background-image: url('backgroundImageOfSkills.jpg'); /* Replace with your background image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    padding: 60px; /* Same padding as Hero Section */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 40px; /* Consistent bottom margin */
+    border-radius: 10px; /* Rounded corners */
+    animation: slideUp 2s ease; /* Same animation */
+}
+
+/* Heading styles */
+#resume h1 {
+    font-size: 2.5rem;
+    color: #8B0000; 
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease; /* Keep this for individual heading animation */
+}
+
+/* Paragraph styling */
+#resume li {
+    font-size: 2.5 rem;
+    line-height: 1.7;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    color:black;
+    font-weight: bolder;
+    animation: fadeInUp 2s ease; /* Keep this for individual paragraph animation */
+}
+
+
+
+/* Projects Section */
+#projects {
+    background-color: lavender;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px; /* Add bottom margin for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: white;
+    animation: slideIn 1.5s ease;
+}
+
+#projects div {
+    display: inline-block;
+    background-color: white;
+    color: #007acc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 2s ease;
+}
+
+/* Contact Section */
+#contact {
+    background: lavender; /* Same background color */
+    color: #111;
+    padding: 60px; /* Same padding as Hero Section */
+    text-align: center;
+    margin-bottom: 40px; /* Add bottom margin for spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-family: "Pacifico", cursive;
+    margin-bottom: 20px;
+    color: #111;
+    animation: popIn 1.5s ease;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    font-family: "Sofadi One", system-ui;
+    margin-bottom: 30px;
+    color: #ccc;
+    animation: popIn 2s ease;
+}
+
+#contact a {
+    color: #007acc;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+#contact h2{
+    font-family: "Pacifico", cursive;
+}
+
+#contact a:hover {
+    border-bottom: 2px solid #007acc;
+}
+
+/* Links */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #005b99;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #Introduction img, #hero img {
+        width: 200px;
+    }
+
+    #resume p, #hero p {
+        font-size: 1rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+       opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+ }
+ 
+ /* Add these lines */
+ @-webkit-keyframes fadeIn { /* Same as above for Webkit browsers like Chrome and Safari */ }
+ @-moz-keyframes fadeIn { /* For Firefox */ }
+ @-ms-keyframes fadeIn { /* For older versions of Edge/IE */ }
+ 

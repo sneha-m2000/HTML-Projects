@@ -1,0 +1,99 @@
+/* ALL SELECTORS
+
+
+
+/* UNIVERSAL SELECTOR */
+ *{
+    margin:0;
+    padding:0;
+}
+/* TYPE SELECTOR */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 00px;
+    background-color: #f4f4f4;
+}
+/* ID SELECTOR */
+#main-header{
+    background:#333;
+    color:#fff;
+    padding:10px 0;
+    text-align:center;
+}
+
+/*CLASS SELECTOR */
+.section-title{
+    color:darkblue;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+/* ATTRIBUTE SELECTOR */
+nav a[href]{
+    text-decoration:none;
+    color:white
+}
+
+/*DESCENDANT SELECTOR*/
+ nav ul{
+    background:#444;
+    list-style:none;
+    padding:10px
+ }
+
+ /* CHILD SELECTOR */
+ nav ul >li{
+    display:inline;
+    margin-right: 20px;
+ }
+
+ /* ADJACENT SIBLING SELECTOR */
+
+ h2+p{
+    color: grey;/* The first <p> immediately after any <h2> */
+ }
+
+ /* General Sibling Selector */
+ h2~p{
+    color:#555 /* All <p> elements that are siblings after an <h2> */
+ }
+
+ /* GROUP SELECTOR */
+
+ h1,h2{
+    font-family:''Georgia, 'Times New Roman', Times, serif
+ }
+
+ /* Pseudo-class Selector */  
+ a:hover{
+    color:yellow; /* Change color on hover */
+ }
+
+ /* Pseudo-element Selector */
+p::first-line{
+    font-weight: bold; /* Styles the first line of any <p> */
+}
+
+/* ADDITIONAL STYLING FOR SPACING BETWEEN SECTIONS */
+section {
+    margin-bottom: 20px; /* Adds space between sections */
+    padding: 20px;
+    background-color:#f4f4f4 ;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    width: 100%; /* Ensures section takes up full width */
+}
+/* SPECIFIC CHANGES FOR SECTION 1 */
+#section1 {
+    background-color:#f4f4f4 ; /* Different background for Section 1 */
+    padding: 0px; /* Increased padding for Section 1 */
+    margin-bottom: 0px; /* Extra space after Section 1 */   
+    margin-top: 20px; 
+}
+
+footer {
+    margin-top: 20px; /* Adds space above the footer */
+    text-align:right; /* Center the footer text if needed */
+    padding: 10px; /* Optional padding for better appearance */
+}

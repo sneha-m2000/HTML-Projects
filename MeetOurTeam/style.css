@@ -1,0 +1,112 @@
+/* Basic reset for consistent margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Section Title */
+.team-section h1 {
+  text-align: center;
+  color: #ff7b00; /* Orange color for the title */
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Team Container */
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Team Member Cards */
+.team-member {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+  flex: 1;              /* Flex-grow property for flexible width */
+  max-width: 250px;      /* Limit the card width to 250px */
+}
+
+.team-member:hover {
+  transform: translateY(-10px);  /* Slight lift on hover */
+}
+
+/* Team Member Image */
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;      /* Circular Image */
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 15px;
+}
+
+/* Team Member Name */
+.team-member h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Role */
+.team-member .role {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.team-member .description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Social Icons Section */
+.social-icons {
+  display: flex;                      /* Use Flexbox */
+  justify-content: center;             /* Center the icons horizontally */
+  align-items: center;                 /* Center vertically */
+  gap: 10px;                           /* Equal spacing between icons */
+  margin-top: 20px;                    /* Add space from the description */
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;                     /* Adjust size for uniformity */
+  width: 30px;                         /* Uniform width */
+  height: 30px;                        /* Uniform height */
+  display: flex;                       /* Center the icon inside the circle */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;                  /* Circular background */
+  background-color: #f0f0f0;           /* Add a light background */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for Social Icons */
+.social-icons a:hover {
+  color: #ff7b00;                      /* Change color on hover */
+  background-color: #e0e0e0;           /* Subtle background change */
+}
+
+/* Social Icons inside Team Member */
+.team-member .social-icons {
+  margin-top: auto; /* Push social icons to the bottom */
+}

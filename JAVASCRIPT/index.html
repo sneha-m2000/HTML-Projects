@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript Name Capitalization</title>
+    </head>
+    <body>
+        <script>
+            // Your JavaScript code goes here
+            var name = prompt("What is your name?");
+            var firstChar = name.slice(0, 1);
+            var firstCharIntoUppercase = firstChar.toUpperCase();
+            var restOne = name.slice(1);
+            var newchar = firstCharIntoUppercase + restOne;
+            alert("Hello! " + newchar);
+
+            //instead of this large code  we can use simple  code
+            // Prompt for name and capitalize the first letter in one line
+            var name = prompt("What is your name?");
+
+            // Capitalize the first letter and combine with the rest of the name
+            var capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
+            // Greet the user with the capitalized name
+            alert("Hello! " + capitalizedName);
+        </script>
+    </body>
+</html>

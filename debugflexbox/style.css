@@ -1,0 +1,84 @@
+body{
+    margin:0;
+}
+h1{
+    margin:0;
+}
+.container{
+    background-color: aqua;
+    display:flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* for reverse aligning */
+    /* justify-content: center; */
+    /* for aligning tables in center */
+    /* justify-content: flex-end; */
+    /* for aligning tables in end*/
+    /* justify-content: space-around; */
+    /*have space right side and left side of tables*/
+    /* justify-content: space-between; */
+    /* have  space after table before starting next table */
+    /* justify-content: space-evenly; */
+    /* have space equally in right and left side */
+     /* align-items: center; */
+    /* have tables in center */
+    /* align-items:flex-end ; */
+    /* tables are in bottom */
+    /* align-items: flex-start; */
+     /* tables are in top */
+     /* flex-wrap: wrap; */
+     /* if we want the items of our page on down based on our page size */
+     /* these properites are  given by flex  so  we  use this .. we muust write display :flex; */ 
+}
+.one,.two,.three{
+    flex:1;
+     /* to take all spaces of  container. we should  write this in child */
+    /* width:300px; */
+    /* instead of this  we write flex:1 */
+    height:200px;
+    background-color: palevioletred;
+    border:1px solid white;
+    text-align: center;
+    padding:5px;
+}
+
+ /* to take all spaces of  container. we should  write this in child */
+
+ /* if we want section 2 only  have seperate  width */
+
+ /* .two{
+    flex:2
+ } */
+
+ /* to change the order of tables */
+/* .one{
+    order:3;
+} */
+  
+/* .two{
+     order:2;} */
+
+ /* .three{
+    order:1
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* flex in colomn */
+
+ /* flex 1  takes  full height of parent div by using in coloumn  */
+ /* flex 1  takes  full width of parent div by using in row  */
+
+
